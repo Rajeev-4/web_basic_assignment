@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+  <script>
+    // Create navigation bar elements
+    var navbar = document.createElement('div');
+    navbar.id = 'navbar';
+    navbar.style.display="flex";
+    navbar.style.backgroundColor="#333";
+    navbar.style.justifyContent="space-between";
+    navbar.style.padding='10px';
+    
+
+    
+
+    var homeLink = document.createElement('a');
+    homeLink.href = '#';
+    homeLink.textContent = 'Home';
+    homeLink.style.color='#fff';
+    navbar.appendChild(homeLink);
+
+    var signupLink = document.createElement('a');
+    signupLink.href = '#';
+    signupLink.textContent = 'Signup';
+    signupLink.style.color='#fff';
+    navbar.appendChild(signupLink);
+
+    var aboutLink = document.createElement('a');
+    aboutLink.href = '#';
+    aboutLink.textContent = 'About';
+    aboutLink.style.color='#fff';
+    navbar.appendChild(aboutLink);
+
+    var contactLink = document.createElement('a');
+    contactLink.href = '#';
+    contactLink.textContent = 'Contact';
+    contactLink.style.color='#fff';
+    navbar.appendChild(contactLink);
+
+    // Add navigation bar as first child of body
+    var body = document.querySelector('body');
+    body.insertBefore(navbar, body.firstChild);
+  </script>
+</body>
+</html>
